@@ -1,12 +1,15 @@
-const user = require('./user')
-const userNewReplace = require('./user')
+//урок про HTTP
+const http = require('http');
+const server = http.createServer((req, res) => {
+    console.log(req.url);
 
-console.log('путь до папки ' + __dirname)
+    res.write('<h1> fsdfsdf </h1>')
 
-console.log('путь до файла ' + __filename)
+    //обязательно закрыть
+    res.end()
+})
 
 
-
-console.log(user)
-
-userNewReplace.sayHello()
+server.listen(3000, () => {
+    console.log('ЗАпущен');
+})
