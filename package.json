@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
